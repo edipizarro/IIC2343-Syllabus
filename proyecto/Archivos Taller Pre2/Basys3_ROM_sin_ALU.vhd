@@ -68,7 +68,8 @@ begin
 
 -- Inicio de declaraci�n de comportamientos.
 
-rom_address <= sw(11 downto 0);
+rom_address(2 downto 0) <= sw(2 downto 0);
+rom_address(11 downto 3) <= "000000000";
 
 disA  <= reg_a(7 downto 4);
 disB  <= reg_a(3 downto 0);
