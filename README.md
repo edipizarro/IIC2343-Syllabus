@@ -10,7 +10,13 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [30-03 | Punto Flotante](https://zoom.us/rec/share/5JZ6LJSg8kVJTpXo2BH7X4l-R6Liaaa80yUd-vUJnhl-lnnkApuFb78hjkCO_GA-)
 
+[08-04 | Datapath](https://drive.google.com/file/d/1FqkHNybbkq-1RP-oLC2qtxuCv8Zx8qRW/view?usp=sharing)
+
 [13-04 | Datapath](https://drive.google.com/file/d/1HWPUMakRv2eTX3BSAemV_Igz1Ev8v-to/view?usp=sharing)
+
+[20-04 | Programbilidad ](https://zoom.us/rec/share/2tNwJZjKxHFOHZWOsVrZQJ4lL9vgaaa8h3cc_fQOmk9HT-dzyWNQxJOltAJt6sLI)
+
+[22-04 | Saltos](https://zoom.us/rec/share/9e5eNZvT3EZLbInv6EfjHZIGQMPlT6a81igY-vsJz0gTKrIebLMzSpT-FevPZBKC)
 
 ### Taller
 
@@ -25,6 +31,10 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 [03-04 | Taller Apoyo Mañana ](https://zoom.us/rec/share/-fB3Eu6sx31OY7ftzwaFV4cuE93fT6a82icfqPRYnkep9CqE03jE4Ay9IkeKy4fU?startTime=1585919837000)
 
 [03-04 | Taller Apoyo Tarde ](https://zoom.us/rec/share/-fB3Eu6sx31OY7ftzwaFV4cuE93fT6a82icfqPRYnkep9CqE03jE4Ay9IkeKy4fU?startTime=1585933573000)
+
+[17-04 | Taller Pre-Entrega 2 Mañana](https://zoom.us/rec/play/tJApdb-t-jw3SIfD5gSDBqIvW9S9eKKs2yQe8vBfxU60BSJRZ1uvM7JGZrfe6QRtK8UZzcYj0MuZNBfH?continueMode=true&_x_zm_rtaid=Og4irsODSQezspsJeycdBg.1587587559906.32ad277c12e39506aca4384e11a21eec&_x_zm_rhtaid=964)
+
+[17-04 | Taller Pre-Entrega 2 Tarde](https://zoom.us/rec/play/uJV4f7z-qG03EteX4wSDAPVxW424LKys2nQY-PBfnRm0W3ICMwfzNeMbYbb5_eS9JrFknO4BtUItSkNP?continueMode=true&_x_zm_rtaid=Og4irsODSQezspsJeycdBg.1587587559906.32ad277c12e39506aca4384e11a21eec&_x_zm_rhtaid=964)
 
 ### Ayudantías
 
