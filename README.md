@@ -104,19 +104,3 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 |Juan Aguillón|Coordinador general|jjaguillon@uc.cl|
 |José Manuel Wielandt|Coordinador de docencia|jmwielandt@uc.cl|
 |Felipe Valenzuela|Coordinador de proyecto|frvalenzuela@uc.cl|
-
-
-### Proyecto
-
-|Evaluación|Fecha|
-|-|-|
-|Entrega 1|27 marzo - 15 abril|
-
-## Contacto
-
-|Nombre|Rol|Correo electrónico|
-|-|-|-|
-|Yadran Eterovic|Profesor|yadran@ing.puc.cl|
-|Juan Aguillón|Coordinador general|jjaguillon@uc.cl|
-|José Manuel Wielandt|Coordinador de docencia|jmwielandt@uc.cl|
-|Felipe Valenzuela|Coordinador de proyecto|frvalenzuela@uc.cl|
