@@ -14,9 +14,13 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [13-04 | Datapath](https://drive.google.com/file/d/1HWPUMakRv2eTX3BSAemV_Igz1Ev8v-to/view?usp=sharing)
 
-[20-04 | Programbilidad ](https://zoom.us/rec/share/2tNwJZjKxHFOHZWOsVrZQJ4lL9vgaaa8h3cc_fQOmk9HT-dzyWNQxJOltAJt6sLI)
+[20-04 | Programbilidad | Versión Zoom ](https://zoom.us/rec/share/2tNwJZjKxHFOHZWOsVrZQJ4lL9vgaaa8h3cc_fQOmk9HT-dzyWNQxJOltAJt6sLI)
 
-[22-04 | Saltos](https://zoom.us/rec/share/9e5eNZvT3EZLbInv6EfjHZIGQMPlT6a81igY-vsJz0gTKrIebLMzSpT-FevPZBKC)
+[20-04 | Programabilidad | Versión Google Drive](https://drive.google.com/drive/folders/1ZCh6qWj0LhLUZVNROxzft9xXKGCzsLJO?usp=sharing)
+
+[22-04 | Saltos | Versión Zoom](https://zoom.us/rec/share/9e5eNZvT3EZLbInv6EfjHZIGQMPlT6a81igY-vsJz0gTKrIebLMzSpT-FevPZBKC)
+
+[22-04 | Saltos | Versión Google Drive](https://drive.google.com/open?id=109kwdGEJOTxBmc6ILvJ-rTFDg9pQUBQg)
 
 ### Taller
 
