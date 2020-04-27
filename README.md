@@ -14,9 +14,13 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [13-04 | Datapath](https://drive.google.com/file/d/1HWPUMakRv2eTX3BSAemV_Igz1Ev8v-to/view?usp=sharing)
 
-[20-04 | Programbilidad ](https://zoom.us/rec/share/2tNwJZjKxHFOHZWOsVrZQJ4lL9vgaaa8h3cc_fQOmk9HT-dzyWNQxJOltAJt6sLI)
+[20-04 | Programbilidad | Versión Zoom ](https://zoom.us/rec/share/2tNwJZjKxHFOHZWOsVrZQJ4lL9vgaaa8h3cc_fQOmk9HT-dzyWNQxJOltAJt6sLI)
 
-[22-04 | Saltos](https://zoom.us/rec/share/9e5eNZvT3EZLbInv6EfjHZIGQMPlT6a81igY-vsJz0gTKrIebLMzSpT-FevPZBKC)
+[20-04 | Programabilidad | Versión Google Drive](https://drive.google.com/drive/folders/1ZCh6qWj0LhLUZVNROxzft9xXKGCzsLJO?usp=sharing)
+
+[22-04 | Saltos | Versión Zoom](https://zoom.us/rec/share/9e5eNZvT3EZLbInv6EfjHZIGQMPlT6a81igY-vsJz0gTKrIebLMzSpT-FevPZBKC)
+
+[22-04 | Saltos | Versión Google Drive](https://drive.google.com/open?id=109kwdGEJOTxBmc6ILvJ-rTFDg9pQUBQg)
 
 ### Taller
 
@@ -35,6 +39,12 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 [17-04 | Taller Pre-Entrega 2 Mañana](https://zoom.us/rec/play/tJApdb-t-jw3SIfD5gSDBqIvW9S9eKKs2yQe8vBfxU60BSJRZ1uvM7JGZrfe6QRtK8UZzcYj0MuZNBfH?continueMode=true&_x_zm_rtaid=Og4irsODSQezspsJeycdBg.1587587559906.32ad277c12e39506aca4384e11a21eec&_x_zm_rhtaid=964)
 
 [17-04 | Taller Pre-Entrega 2 Tarde](https://zoom.us/rec/play/uJV4f7z-qG03EteX4wSDAPVxW424LKys2nQY-PBfnRm0W3ICMwfzNeMbYbb5_eS9JrFknO4BtUItSkNP?continueMode=true&_x_zm_rtaid=Og4irsODSQezspsJeycdBg.1587587559906.32ad277c12e39506aca4384e11a21eec&_x_zm_rhtaid=964)
+
+[24-04 | Taller Entrega 2 Mañana](https://zoom.us/rec/play/tZMqcej7rWo3GtaX4QSDB6R5W9Tpff6shnAdq_sJnUm1VXgLOwWiMOQRN7Y1FQ2YyNcFtrZvOKOvuekq?continueMode=true)
+
+[24-04 | Taller Entrega 2 Tarde](https://zoom.us/rec/play/tZMqcej7rWo3GtaX4QSDB6R5W9Tpff6shnAdq_sJnUm1VXgLOwWiMOQRN7Y1FQ2YyNcFtrZvOKOvuekq?autoplay=true&continueMode=true&startTime=1587751516000)
+
+
 
 ### Ayudantías
 
