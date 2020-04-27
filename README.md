@@ -92,19 +92,19 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 |Evaluación|Fecha|Preguntas programadas|Preguntas escritas|
 |-|-|-|-|
 |Tarea 1|30 marzo - 14 abril|6|4|
+|Tarea 2|6 - 20 mayo|3|3|
 
-<!-- |Tarea 2|6 - 20 mayo|||
-|Tarea 3|||| -->
+<!-- |Tarea 3|||| -->
 
 ### Proyecto
 
 |Evaluación|Fecha|
 |-|-|
 |Entrega 1|27 marzo - 15 abril|
+|Entrega 2|24 abril - 8 mayo|
+|Entrega 3|24 abril - 29 mayo|
 
-<!-- |Entrega 2||
-|Entrega 3||
-|Entrega 4|| -->
+<!-- |Entrega 4|| -->
 
 ## Contacto
 
