@@ -22,6 +22,8 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [22-04 | Saltos | Versión Google Drive](https://drive.google.com/open?id=109kwdGEJOTxBmc6ILvJ-rTFDg9pQUBQg)
 
+[27-04 | Horario Consultas](https://zoom.us/rec/share/yfdWEZ_sqHtIHKuKxn7xe6grIafLT6a8h3dI-fYEyh6xLawMGW3hrB1SHwzs8huW)
+
 ### Taller
 
 [20-03 | Taller Introductorio Mañana](https://zoom.us/rec/play/ucZ4fuv6_243GIHD4wSDBqUoW43oJ66s1yJMrqAKmU2wUHlXYFqhYucVNrdZsPcY2foozDvumPDaWTNX?startTime=1584709509000&_x_zm_rtaid=p0OfPwvyS8WybevX7l6Bsw.1585289700185.c531e3b4139cc7ddbe1ca545d7dcca4d&_x_zm_rhtaid=398)
