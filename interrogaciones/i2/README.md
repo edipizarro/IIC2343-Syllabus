@@ -39,10 +39,10 @@ Los límites de lo que podemos hacer en un solo ciclo están marcados por lo que
 
 ## Pregunta 5
 
-La memoria de instrucciones tiene una RAM que se puede ver como un bloque de registros todos juntos y ciertos circuitos a su alrededor (de la RAM) donde pasan "cosas".
+La memoria de datos tiene una RAM que se puede ver como un bloque de registros todos juntos y ciertos circuitos a su alrededor (de la RAM) donde pasan "cosas".
 
 Tienen que determinar esos circuitos aledaños a la RAM y su funcionamiento.
 
-La memoria de instrucciones tiene un DataIn que se corresponde al dato de entrada, un DataOut que se corresponde al dato de salida, una señal W que indica si estamos escribiendo o no y un Adress, que indica la dirección de memoria a leer o escribir.
+La memoria de datos tiene un DataIn que se corresponde al dato de entrada, un DataOut que se corresponde al dato de salida, una señal W que indica si estamos escribiendo o no y un Adress, que indica la dirección de memoria a leer o escribir.
 
 Pueden asumir que la RAM es un bloque de registros, sus entradas y sus salidas son las que se corresponden a los propios registros.
