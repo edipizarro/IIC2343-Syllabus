@@ -112,43 +112,43 @@ end process;
     evaluarA <= (disA xor "0001");
     evaluarB <= (disB xor "0000");
     evaluarC <= (disC xor "0001");
-    evaluarD <= (disD xor "0000");
+    evaluarD <= (disD xor "1001");
     wait for 20 ns;
     -- NOP 
     evaluarA <= (disA xor "0001");
     evaluarB <= (disB xor "0000");
     evaluarC <= (disC xor "0001");
-    evaluarD <= (disD xor "0000");
+    evaluarD <= (disD xor "1001");
     wait for 20 ns;
     -- SUB A,2 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "1110");
     evaluarC <= (disC xor "0001");
-    evaluarD <= (disD xor "0000");
+    evaluarD <= (disD xor "1001");
     wait for 20 ns;
     -- SUB B,10 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "1110");
     evaluarC <= (disC xor "0000");
-    evaluarD <= (disD xor "0110");
+    evaluarD <= (disD xor "0100");
     wait for 20 ns;
     -- SUB A,B 
     evaluarA <= (disA xor "0000");
-    evaluarB <= (disB xor "1000");
+    evaluarB <= (disB xor "1010");
     evaluarC <= (disC xor "0000");
-    evaluarD <= (disD xor "0110");
+    evaluarD <= (disD xor "0100");
     wait for 20 ns;
     -- SUB A,5 
     evaluarA <= (disA xor "0000");
-    evaluarB <= (disB xor "0011");
+    evaluarB <= (disB xor "0101");
     evaluarC <= (disC xor "0000");
-    evaluarD <= (disD xor "0110");
+    evaluarD <= (disD xor "0100");
     wait for 20 ns;
     -- SUB B,A 
     evaluarA <= (disA xor "0000");
-    evaluarB <= (disB xor "0011");
+    evaluarB <= (disB xor "0101");
     evaluarC <= (disC xor "0000");
-    evaluarD <= (disD xor "0011");
+    evaluarD <= (disD xor "0001");
     wait for 20 ns;
     -- Put test bench stimulus code here
       

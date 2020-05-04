@@ -96,6 +96,12 @@ end process;
     evaluarC <= (disC xor "0000");
     evaluarD <= (disD xor "0000");
     wait for 20 ns;
+    -- MOV B,0   
+    evaluarA <= (disA xor "0000");
+    evaluarB <= (disB xor "0000");
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0000");
+    wait for 20 ns;
     -- MOV A,237 
     evaluarA <= (disA xor "1110");
     evaluarB <= (disB xor "1101");
