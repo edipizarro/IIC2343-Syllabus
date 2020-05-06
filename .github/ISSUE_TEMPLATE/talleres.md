@@ -2,7 +2,7 @@
 name: Talleres
 about: "Para dudas sobre los talleres. \U0001F6E0"
 title: Taller | Mi título súper descriptivo
-labels: ''
+labels: Talleres
 assignees: ''
 
 ---
