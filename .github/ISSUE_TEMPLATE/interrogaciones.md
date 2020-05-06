@@ -3,7 +3,7 @@ name: Interrogaciones
 about: "Para dudas de enunciado durante las interrogaciones o dudas generales sobre
   las mismas luego de que estas terminen. \U0001F407"
 title: Interrogación X | Pregunta Y | Mi título hiper descriptivo.
-labels: Interrogaciones
+labels: ''
 assignees: ''
 
 ---

@@ -2,7 +2,7 @@
 name: Entregas
 about: "Para dudas sobre las entregas de taller. \U0001F4A3"
 title: Entrega X | Mi título descriptivísimo
-labels: Entregas
+labels: ''
 assignees: ''
 
 ---

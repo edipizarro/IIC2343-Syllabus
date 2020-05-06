@@ -2,7 +2,7 @@
 name: Ayudantías
 about: "Para dudas sobre las ayudantías. \U0001F9F6"
 title: Ayudantía X | Pregunta Y | Mi título
-labels: Ayudantías
+labels: Ayudantía
 assignees: ''
 
 ---

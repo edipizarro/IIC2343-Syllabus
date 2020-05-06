@@ -2,7 +2,7 @@
 name: Tareas
 about: "Para dudas sobre las tareas. \U0001F9FF"
 title: Tarea X | Pregunta Y | Mi título muy descriptivo aquí
-labels: Tareas
+labels: ''
 assignees: ''
 
 ---
