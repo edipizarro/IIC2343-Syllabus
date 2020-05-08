@@ -49,10 +49,13 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [24-04 | Taller Entrega 2 Tarde](https://zoom.us/rec/play/tZMqcej7rWo3GtaX4QSDB6R5W9Tpff6shnAdq_sJnUm1VXgLOwWiMOQRN7Y1FQ2YyNcFtrZvOKOvuekq?autoplay=true&continueMode=true&startTime=1587751516000)
 
+[08-05 | Taller Apoyo Entrega 2 Mañana](https://zoom.us/rec/share/ppB_M4jsrXFJfs_17nyOBJYKAab7X6a80HBM_PoPyE1ttDDOSJ1FmSc-yEJQRFv4?startTime=1588946568000)
+
 
 ### Ayudantías
 
 [01-04 | Ayudantía I<sub>1</sub>](https://drive.google.com/open?id=14m2uL9SbPR3FdovNB06ANvc1L0UOLPgu)
+[08-05 | Ayudantía Tarea 2 Mañana](https://zoom.us/rec/share/ppB_M4jsrXFJfs_17nyOBJYKAab7X6a80HBM_PoPyE1ttDDOSJ1FmSc-yEJQRFv4?startTime=1588951922000)
 
 ### Interrogaciones
 
