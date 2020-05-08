@@ -1,0 +1,31 @@
+DATA:
+    a   -1
+    b   -1
+    res -1
+
+//!begin-data	            // no cambiar, comentario de control
+
+    // tus variables aquí
+
+//!end-data                 // no cambiar, comentario de control
+
+CODE:	    	        	// no cambiar
+    JMP main		        // no cambiar
+    compare:		        // no cambiar
+    //!begin-code           // no cambiar, comentario de control
+    
+        // tu código aquí
+
+    //!end-code             // no cambiar, comentario de control
+    // nada de lo que cambies a partir de la línea anterior
+    // contará como parte de tu entrega
+    exit: JMP exit  	    // es para evitar loops infinitos
+    
+    main:
+        MOV A,(a)
+        MOV B,(b)
+        JMP compare
+        NOP
+        NOP
+        NOP
+        NOP

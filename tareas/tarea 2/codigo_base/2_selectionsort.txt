@@ -1,0 +1,35 @@
+DATA:
+    arreglo1 1
+            2
+            3
+            -20
+            5
+            6
+            7
+    largo   7
+    arreglo2 0
+//!begin-data
+// tu data aquí
+//!end-data
+CODE:
+JMP main
+
+selection_sort:
+//!begin-code
+// tu código aquí
+
+    JMP end     // para terminar la ejecución
+
+//!end-code
+end: JMP end  // condición de término para el emulador
+main:
+MOV A,arreglo1
+MOV B,largo
+JMP selection_sort
+NOP
+NOP
+NOP
+NOP
+NOP
+NOP
+

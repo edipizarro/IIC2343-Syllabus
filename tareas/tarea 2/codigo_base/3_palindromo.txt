@@ -1,0 +1,48 @@
+DATA:
+    str     'a'
+            'b'
+            'c'
+            'c'
+            'b'
+            'a'
+            0
+    len 	0
+    ret		-1					// vale 1 -> palíndromo, vale 0 -> no palíndromo
+    
+    //!begin-data				// no cambiar, comentario de control
+
+        // tus variables aquí!
+    
+    //!end-data					// no cambiar, comentario de control
+CODE:
+    JMP main
+    
+    //!begin-code               // no cambiar, comentario de control
+
+    calcular_largo:
+        // tu código de la subrutina aquí
+	RET
+    determinar_palindromo:
+	// tu código de la subrutina aquí
+	RET
+
+    // puedes crear otras subrutinas adicionales
+
+    //!end-code                 // no cambiar, comentario de control
+    end: JMP end                            // terminar el programa
+    main:
+        MOV A,str				            // puntero del string
+        MOV B,ret				            // puntero a la dirección de retorno
+        CALL determinar_palindromo
+        // CALL calcular_largo              // llamo a calcular_largo
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
