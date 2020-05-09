@@ -7,12 +7,12 @@ DATA:
                         6
                         7
     largo               7
-    arreglo_ordenado    0
 
 //!begin-data
 
     // tu data aquí
 
+    arreglo_ordenado    0
 //!end-data
 
 CODE:
