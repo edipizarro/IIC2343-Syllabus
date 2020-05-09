@@ -1,0 +1,36 @@
+DATA:
+    str "hola"
+    variable_de_retorno 0
+    len 4
+    
+
+//!begin-data
+    ptr 0
+
+
+//!end-data
+
+CODE:
+JMP main
+
+sub_recorrer_arreglo:
+// recibo el puntero en A
+// recibo en B el puntero a la variable de retorno
+//!begin-code
+NOP
+// CALL sub_recorrer_arreglo NO HACER STACK OVRFLOW!!!!
+PUSH A      // guarda el puntero en el stack y no lo pierdo.
+
+POP A // POP B
+RET
+
+//!end-code
+end: JMP end
+main:
+    MOV A,str
+    MOV B,variable_de_retorno
+    CALL sub_recorrer_arreglo
+
+
+
+

@@ -1,0 +1,34 @@
+DATA:
+    dividendo   0
+    divisor     0
+    cociente    0
+    resto       0
+
+CODE:
+JMP main
+div:                                                    // división sin signo
+    MOV (dividendo),A
+    MOV (divisor),B
+    while_dividendo_mayor_o_igual_que_divisor:
+        MOV A,(dividendo)
+        MOV B,(divisor)
+        CMP A,B
+        JLT end_while
+        SUB A,B
+        MOV (dividendo),A
+        MOV A,(cociente)
+        ADD A,1
+        MOV (cociente),A
+        JMP while_dividendo_mayor_o_igual_que_divisor
+    end_while:
+        MOV (resto),A
+        MOV A,(cociente)
+        MOV B,(resto)
+    RET
+        
+
+
+main:
+    MOV A,10
+    MOV B,3
+    CALL div    // calcula A / B

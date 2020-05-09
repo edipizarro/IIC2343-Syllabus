@@ -1,0 +1,28 @@
+DATA:
+var -1
+
+CODE:
+JMP 100
+	MOV A,(var)
+	CMP A,0
+	JGT end_fin_rom  // -1 - 0 = -1; Z = 0; N = 1;
+	CMP A,0
+	JEQ end_ciclo_cerrado
+
+no_termina_nunca:
+	NOP
+	JMP no_termina_nunca
+hola
+end_ciclo_cerrado: JMP end_ciclo_cerrado
+
+end_fin_rom:
+
+
+// python:
+// a = 4 + 5
+
+// def x():
+// 	print("hola")
+
+// print(a)
+// x()

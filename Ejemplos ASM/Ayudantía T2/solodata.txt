@@ -1,0 +1,7 @@
+DATA:
+var -1
+var2    20
+var3    2
+aaaa 9
+
+CODE:

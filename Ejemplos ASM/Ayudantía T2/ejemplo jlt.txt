@@ -1,0 +1,15 @@
+DATA:
+
+
+CODE:
+    MOV A,250
+    CMP A,5
+    A - 5 // 250 - 5
+    // 245 -> N = 1 Z = 0 ...
+    JLT dir
+    NOP
+    dir:
+    MOV B,6
+
+
+    // 1111 1010

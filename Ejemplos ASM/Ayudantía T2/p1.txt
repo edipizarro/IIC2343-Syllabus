@@ -1,0 +1,9 @@
+DATA:
+CODE:
+    MOV A,100
+    MOV B,-100
+    CMP A,B
+    JGT label
+    JMP end
+    label: MOV B,5
+    end: JMP end

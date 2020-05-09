@@ -1,0 +1,23 @@
+DATA:
+num 5                           // un número
+caracter 'a'                    // un caracter (ASCII)
+arreglo 3                       // arreglo[0]
+        2                       // arreglo[1]
+        1                       // arreglo[2]
+string  "hola :D"               // string
+string2 'h'                     // string == arreglo de caracteres
+        'o'
+        'l'
+        'a'
+        ' '
+        ':'
+        'D'
+        0                       // marcamos el término con el caracter NULL
+
+numhexa 23h                     // número en hexa
+numbin	100101b                 // número en binario
+loqueimportansonlosbits1 255    // es igual a -1
+loqueimportansonlosbits2 -1     // es igual a 255
+
+CODE:
+NOP

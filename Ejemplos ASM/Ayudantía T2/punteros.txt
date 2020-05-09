@@ -1,0 +1,47 @@
+DATA:
+    num1    5
+    num2    10
+    arreglo 1   // mem[arreglo]
+            2   // mem[arreglo + 1]
+            3   // mem[arreglo + 2]
+    len     3
+    suma    0
+//!begin-data
+    ptr     0   // ptr = pointer = 'puntero'
+//!end-data
+CODE:
+    JMP sumar_arreglo
+    MOV A,num1      // A = 0
+    MOV B,(num1)    // B = 5  // MOV B, 5 <- Mem[num1]
+// JMP end
+    MOV B,num1      // B = num1 = 0
+    INC B           // B = B + 1 = 1 = num2
+    MOV B,(B)       // B = mem[B] = mem[num1 + 1] = mem[num2]
+JMP end
+
+// Vamos a programar A = sum(arreglo).
+sumar_arreglo:
+    MOV A,(suma)
+    MOV B,arreglo
+    MOV (ptr), B
+    while_contenido_ptr_menos_arreglo_menor_que_contenido_len:  // (ptr) - arreglo < (len)
+        // Verificamos la condición
+        MOV A,(ptr)
+        MOV B,arreglo
+        SUB A,B
+        MOV B,(len)
+        CMP A,B
+        JGE llegué_al_final  // si es falsa, saltamos
+        MOV A,(suma)
+        MOV B,(ptr)
+        MOV B,(B)  // B = mem[((ptr))]
+        ADD A,B
+        MOV (suma),A
+        MOV B,(ptr)
+        INC B
+        MOV (ptr),B
+        JMP while_contenido_ptr_menos_arreglo_menor_que_contenido_len
+    llegué_al_final:
+        MOV A,(suma)
+
+end: // terminaremos al llegar al final de la rom.
