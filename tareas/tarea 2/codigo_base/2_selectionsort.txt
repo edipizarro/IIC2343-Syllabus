@@ -12,8 +12,9 @@ DATA:
 
     // tu data aquí
 
-    arreglo_ordenado    0
 //!end-data
+
+    arreglo_ordenado    0
 
 CODE:
 JMP main
