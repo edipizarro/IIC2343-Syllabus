@@ -11,10 +11,12 @@ DATA:
 
 CODE:	    	        	// no cambiar
     JMP main		        // no cambiar
-    compare:		        // no cambiar
+compare:		            // no cambiar
     //!begin-code           // no cambiar, comentario de control
     
         // tu código aquí
+
+        JMP end             // para terminar la ejecución
 
     //!end-code             // no cambiar, comentario de control
     // nada de lo que cambies a partir de la línea anterior

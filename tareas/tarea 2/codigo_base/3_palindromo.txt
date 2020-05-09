@@ -22,8 +22,9 @@ CODE:
     calcular_largo:
         // tu código de la subrutina aquí
 	RET
+
     determinar_palindromo:
-	// tu código de la subrutina aquí
+	    // tu código de la subrutina aquí
 	RET
 
     // puedes crear otras subrutinas adicionales
@@ -34,6 +35,7 @@ CODE:
         MOV A,str				            // puntero del string
         MOV B,ret				            // puntero a la dirección de retorno
         CALL determinar_palindromo
+        // MOV A,str                        // puntero del string
         // CALL calcular_largo              // llamo a calcular_largo
         NOP
         NOP
