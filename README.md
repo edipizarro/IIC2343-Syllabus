@@ -26,6 +26,12 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [06-05 | Subrutinas](https://zoom.us/rec/share/wJZldbWsrTxLSbeUqxvQe7cLOMPbT6a80SVK86FZzl8n5NLdtGZmuNoc6AeKspU)
 
+[11-05 | Subrutinas](https://zoom.us/rec/share/vtVYdeD8yERITbPI5VuDVoslH9u-aaa81SZM_qILz0m8dYh0RnpgvxKBkAbwK0EH)
+
+[13-05 | Microarquitectura & ISA](https://zoom.us/rec/share/puV0L7Td2FtJZqfRx2fZWPcqN6PCeaa81ihM-qdezBpnAFpQWniijIiYuJzVH7F_)
+
+[18-05 | Paralelismo a nivel de instrucción](https://zoom.us/rec/share/xe9UFKOg51FJRZXrxm_OC6N8D5vvT6a8gSUZqfNYncR2xToFfcA7XhOXhNu721Y)
+
 
 ### Taller
 
@@ -52,6 +58,12 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 [08-05 | Taller Apoyo Entrega 2 Mañana](https://zoom.us/rec/share/ppB_M4jsrXFJfs_17nyOBJYKAab7X6a80HBM_PoPyE1ttDDOSJ1FmSc-yEJQRFv4?startTime=1588946568000)
 
 [08-05 | Taller Apoyo Entrega 2 Tarde](https://zoom.us/rec/share/-PZ7IrfPzk9LRtaX5wLjHaUiEKemeaa80SRM8qBfyU68syza6wx6Po3fkxwR9Kzp?startTime=1588961132000)
+
+[15-05 | Taller Entrega 3 Mañana](https://zoom.us/rec/play/u5x8cbqu_T03SdXAtgSDAaR7W9W8eK2s0icZ8vEEmEaxU3kBY1T1MOBEYuBRTAS2ktIBdo2hxtzMB5P-?continueMode=true&_x_zm_rtaid=CPNj2JVKSueudCmXoJ2N1w.1589839094238.b1b568923e565827e0298692dd376909&_x_zm_rhtaid=839)
+
+[15-05 | Taller Entrega 3 Tarde modulo 4](https://zoom.us/rec/play/6JZ5Ib2s-js3EtyWtASDC_RwW9TrLv-s1yBN8_BbzUe9UXZWZAemNOREYeYRjJGH73myl_YJPUzyUXwi?continueMode=true&_x_zm_rtaid=CPNj2JVKSueudCmXoJ2N1w.1589839094238.b1b568923e565827e0298692dd376909&_x_zm_rhtaid=839)
+
+[15-05 | Taller Entrega 3 Tarde modulo 5](https://zoom.us/rec/play/6JAlJuuppj43S92U4wSDUKcqW9S7eP6s1yhN_qIOyBqxBnAGNlCvM-FHYOa9KJR2Mw05UdC9BApJZLvc?continueMode=true&_x_zm_rtaid=CPNj2JVKSueudCmXoJ2N1w.1589839094238.b1b568923e565827e0298692dd376909&_x_zm_rhtaid=839)
 
 
 ### Ayudantías
