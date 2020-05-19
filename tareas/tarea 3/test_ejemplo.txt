@@ -1,0 +1,6 @@
+3
+2 1 tomate 100.4 6 cerveza 659.9
+4 8 tomate 803.2 6 huevo 435.0 2 salchicha 113.2 4 salmón 1298.0
+1 1 toallitas_de_bebés 100.7
+60000.0
+0.02
