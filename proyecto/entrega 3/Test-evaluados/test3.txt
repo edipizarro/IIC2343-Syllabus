@@ -1,0 +1,109 @@
+DATA:
+var0 1
+var1 2
+var2 3
+var3 4
+var4 5
+res 0
+var6 1
+var7 2
+var8 3
+var9 4
+var10 5
+var11 6
+var12 7
+
+CODE:
+MOV A,2
+ADD A,(var0) 
+MOV A,2
+ADD B,(var0) 
+ADD (var0)
+MOV A,(var0) 
+
+MOV A,4
+SUB A,(var1) 
+MOV A,4
+SUB B,(var1) 
+SUB (var1)
+MOV A,(var1) 
+
+MOV A,7
+AND A,(var2) 
+MOV A,7
+AND B,(var2) 
+AND (var2)
+MOV A,(var2) 
+
+MOV A,16
+OR A,(var3) 
+MOV A,16
+OR B,(var3) 
+OR (var3)
+MOV A,(var3) 
+
+MOV A,32
+XOR A,(var4) 
+MOV A,32
+XOR B,(var4) 
+XOR (var4)
+MOV A,(var4) 
+
+
+MOV A,64
+NOT (res),A 
+MOV A,(res) 
+
+MOV A,128
+SHL (res),A
+MOV A,(res) 
+
+MOV A,256
+SHR (res),A
+MOV A,(res) 
+
+
+MOV B,(var6)
+MOV A,2
+ADD A,(B) 
+MOV A,2
+ADD B,(B) 
+
+MOV B,(var7)
+MOV A,2
+SUB A,(B) 
+MOV A,2
+SUB B,(B) 
+
+MOV B,(var8)
+MOV A,3
+AND A,(B) 
+MOV A,3
+AND B,(B) 
+
+MOV B,(var9)
+MOV A,1
+OR A,(B) 
+MOV A,1
+OR B,(B) 
+
+MOV B,(var10)
+MOV A,3
+XOR A,(B) 
+MOV A,3
+XOR B,(B) 
+
+MOV B,(var11)
+MOV A,0
+NOT (B),A
+MOV B,(B) 
+
+MOV B,(var12)
+MOV A,1
+SHL (B),A
+MOV B,(B) 
+
+MOV B,(var12)
+MOV A,2
+SHR (B),A
+MOV B,(B) 

@@ -1,0 +1,39 @@
+DATA:
+var1 4
+var2 2
+var3 1
+var4 0
+var5 0
+var6 0
+CODE:
+MOV A,1
+MOV B,(var2)
+SHL (B),A
+loop:
+CMP A,(B)
+JEQ next
+MOV A,(var4)
+ADD A,1
+MOV (var4),A
+INC (B)
+MOV A,10
+JMP loop
+next:
+MOV A,(var4)
+SUB A,3
+MOV (var4),A
+MOV A,(B)
+SHR (B),A
+MOV A,(var4)
+XOR A,(B)
+CMP A,0
+JEQ equal
+not_equal:
+NOT (B),A
+MOV A,4
+MOV B,A
+equal:
+XOR B,(B)
+MOV A,B
+CMP A,5
+JEQ not_equal
