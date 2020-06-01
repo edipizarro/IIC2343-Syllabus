@@ -16,11 +16,12 @@ architecture bench of Basys3_tb is
           disA            : out std_logic_vector(3 downto 0);
           disB            :  out std_logic_vector(3 downto 0);
           disC            : out std_logic_vector(3 downto 0);
-          disD            : out std_logic_vector(3 downto 0)
+          disD            : out std_logic_vector(3 downto 0);
+          sp_value : out std_logic_vector(11 downto 0) 
             );
   end component;
 
-  signal sw: std_logic_vector (15 downto 0) := "0000000000000000000";
+  signal sw: std_logic_vector (15 downto 0) := "0000000000000000";
   signal btn: std_logic_vector (4 downto 0) := "00000";
   signal led: std_logic_vector (3 downto 0);
   signal clk: std_logic := '0';
@@ -28,6 +29,7 @@ architecture bench of Basys3_tb is
   signal disB: std_logic_vector(3 downto 0);
   signal disC: std_logic_vector(3 downto 0);
   signal disD: std_logic_vector(3 downto 0) ;
+  signal sp_value: std_logic_vector(11 downto 0) ;
   signal mled: std_logic_vector(2 downto 0) ;
   signal evaluarA: std_logic_vector(3 downto 0)  := "0000";
   signal evaluarB: std_logic_vector(3 downto 0)  := "0000";
@@ -48,7 +50,8 @@ begin
                          disA => disA,
                          disB => disB,
                          disC => disC,
-                         disD => disD );
+                         disD => disD,
+                         sp_value => sp_value);
 mled <= led(3 downto 1);
 evaluar <= evaluarA & evaluarB & evaluarC & evaluarD & evaluarL;
 process
@@ -70,71 +73,90 @@ end process;
   
     -- Put initialisation code here
 
-    wait for 6 ns;
-    -- MOV B,1
-    -- MOV (0),B
+    wait for 20 ns;
+    -- MOV B,1 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "0000");
     evaluarC <= (disC xor "0000");
     evaluarD <= (disD xor "0001");
-    wait for 40 ns; --46
-    -- MOV B,0
-    -- MOV (1),B
+    wait for 20 ns;
+    -- MOV (0),B 
+    evaluarA <= (disA xor "0000");
+    evaluarB <= (disB xor "0000");
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0001");
+    wait for 20 ns;
+    -- MOV B,0 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "0000");
     evaluarC <= (disC xor "0000");
     evaluarD <= (disD xor "0000");
-    wait for 60 ns; --106
-    -- MOV B,0
-    -- MOV (2),B
-    -- MOV B,0
+    wait for 20 ns;
+    -- MOV (1),B 
+    evaluarA <= (disA xor "0000");
+    evaluarB <= (disB xor "0000");
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0000");
+    wait for 20 ns;
+    -- MOV B,0 
+    evaluarA <= (disA xor "0000");
+    evaluarB <= (disB xor "0000");
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0000");
+    wait for 20 ns;
+    -- MOV (2),B 
+    evaluarA <= (disA xor "0000");
+    evaluarB <= (disB xor "0000");
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0000");
+    wait for 20 ns;
+    -- MOV B,0 
+    evaluarA <= (disA xor "0000");
+    evaluarB <= (disB xor "0000");
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0000");
+    wait for 20 ns;
+    -- MOV A,(0) 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "0001");
     evaluarC <= (disC xor "0000");
     evaluarD <= (disD xor "0000");
-    wait for 20 ns; --126
-    -- MOV A,(0)
+    wait for 20 ns;
+    -- MOV B,(1) 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "0001");
     evaluarC <= (disC xor "0000");
-    evaluarD <= (disD xor "0000");    
-  
-    wait for 20 ns; --146
-    -- MOV B,(1)
+    evaluarD <= (disD xor "0000");
+    wait for 20 ns;
+    -- ADD B,A 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "0001");
     evaluarC <= (disC xor "0000");
-    evaluarD <= (disD xor "0001");    
-    wait for 20 ns; --166
-    -- ADD B,A
+    evaluarD <= (disD xor "0001");
+    wait for 20 ns;
+    -- MOV A,10 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "1010");
     evaluarC <= (disC xor "0000");
-    evaluarD <= (disD xor "0001");    
-    wait for 20 ns; --186
-    -- MOV A,10
+    evaluarD <= (disD xor "0001");
+    wait for 20 ns;
+    -- MOV (0),A 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "1010");
-    evaluarC <= (disC xor "0000");    
-    evaluarD <= (disD xor "0001");    
-    wait for 20 ns; --206
-    -- MOV(B),A
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0001");
+    wait for 20 ns;
+    -- MOV (2),A 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "1010");
-    evaluarC <= (disC xor "0000");    
-    evaluarD <= (disD xor "0001");    
-    wait for 20 ns; --226
-    -- MOV (2),A | MOV (res),A
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "0001");
+    wait for 20 ns;
+    -- MOV B,(2) 
     evaluarA <= (disA xor "0000");
     evaluarB <= (disB xor "1010");
-    evaluarC <= (disC xor "0000");    
-    evaluarD <= (disD xor "1010");    
-    wait for 20 ns; --246
-    -- MOV B,(2)
-    evaluarA <= (disA xor "0000");
-    evaluarB <= (disB xor "1010");
-    evaluarC <= (disC xor "0000");    
-    evaluarD <= (disD xor "1010");  
+    evaluarC <= (disC xor "0000");
+    evaluarD <= (disD xor "1010"); 
     
     -- Put test bench stimulus code here
       
