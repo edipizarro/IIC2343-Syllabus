@@ -16,8 +16,7 @@ architecture bench of Basys3_tb is
           disA            : out std_logic_vector(3 downto 0);
           disB            :  out std_logic_vector(3 downto 0);
           disC            : out std_logic_vector(3 downto 0);
-          disD            : out std_logic_vector(3 downto 0);
-          sp_value : out std_logic_vector(11 downto 0) 
+          disD            : out std_logic_vector(3 downto 0)) 
             );
   end component;
 
@@ -29,7 +28,6 @@ architecture bench of Basys3_tb is
   signal disB: std_logic_vector(3 downto 0);
   signal disC: std_logic_vector(3 downto 0);
   signal disD: std_logic_vector(3 downto 0) ;
-  signal sp_value: std_logic_vector(11 downto 0) ;
   signal mled: std_logic_vector(2 downto 0) ;
   signal evaluarA: std_logic_vector(3 downto 0)  := "0000";
   signal evaluarB: std_logic_vector(3 downto 0)  := "0000";
@@ -50,8 +48,7 @@ begin
                          disA => disA,
                          disB => disB,
                          disC => disC,
-                         disD => disD,
-                         sp_value => sp_value);
+                         disD => disD);
 mled <= led(3 downto 1);
 evaluar <= evaluarA & evaluarB & evaluarC & evaluarD & evaluarL;
 process
