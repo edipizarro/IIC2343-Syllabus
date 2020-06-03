@@ -32,6 +32,10 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [18-05 | Paralelismo a nivel de instrucción](https://zoom.us/rec/share/xe9UFKOg51FJRZXrxm_OC6N8D5vvT6a8gSUZqfNYncR2xToFfcA7XhOXhNu721Y)
 
+[20-05 | Paralelismo a nivel de instrucción](https://zoom.us/rec/share/5cpxJa3i-U9JbI2R00HQHfQ8Pq_keaa81yEX_acFyxuH0K9PK2C3LIabnLQejtnH)
+
+[01-06 |  Microarquitectura & ISA](https://zoom.us/rec/share/_8JZdJX8zEROXoH98mHmGZJ7XZjEX6a81XNLrvEPzEaNAIRFB13mqLAuJtHHM7P7 )
+
 
 ### Taller
 
