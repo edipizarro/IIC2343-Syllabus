@@ -1,0 +1,121 @@
+Registros: desde $0 a $8 + temp (llamado $9)
+	$0 tiene un 0 harcodeado
+	$1 a $8 son de libre uso
+
+
+Operaciones ALU: add, sub o neg*, rot, nor
+
+Ejemplos de uso:
+
+add r0, r1, r2		r0 = r1 + r2 	&& temp = r1 + r2
+
+sub r0, r1, r2		r0 = r1 - r2 	&& temp = r1 - r2
+o
+neg r0, r1		r0 = r1 * -1 	&& temp = r1 * -1
+
+rot r0, r1, r2		r0 = r1 << r2 	&& temp = r1 << r2	roto hacia la izquierda (msb)
+rot r0, r1, -r2		r0 = r1 >> r2 	&& temp = r1 >> r2	roto hacia la derecha (lsb)
+nor r0, r1, r2		r0 = ~(r1 | r2)	&& temp = ~(r1 | r2)
+
+*: nosotros usaremos la versión con sub.
+
+Si no especifico el primer registro, el valor solo se guarda en el registro temporal.
+
+
+Escribir valores en registros
+
+cpy r0			r0 = temp	muevo el valor de temp a un registro
+w temp, lit		temp = lit	escribo un literal en el registro temp
+
+
+Movimiento de datos en memoria
+
+lb r0, const(r1)	r0 = mem[r1 + const]
+sb r0, const(r1)	mem[r1 + const] = r0
+
+
+Saltos condicionales
+
+beq r0, r1, label	if (r0 == r1) goto label
+bne r0, r1, label	if (r0 != r1) goto label
+
+
+Saltos incondicionales y llamados (y retorno) de subrutinas
+
+j label			goto label (literal)
+jr r0			goto r0 (el valor almacenado en r0)
+
+
+
+
+POR SI TIENES DUDAS SOBRE LOS DETALLES
+DETALLES DE EQUIVALENCIA DE OPERACIONES
+
+
+- MOV -------------------------
+; el único mov que nos queda "pendiente" es el mov entre registros (como MOV A,B)
+add $1, $2, $0 ; $1 = $2 + $0 que sería $1 = $2 + 0 que sería $1 = $2
+-------------------------------
+
+
+- AND -------------------------
+tengo: nor := ~(p or q)
+quiero: p and q
+
+~((p nor p) or (q nor q))
+
+como p or p = p
+
+~(~p or ~q)
+
+~~p and ~~q
+p and q.
+-------------------------------
+
+
+- SHL -------------------------
+; tenemos nuestro número en $1
+w 1
+cpy $2
+w 0xFE
+cpy $3
+rot $1, $1, $2	; rotamos 1 a la izquierda
+nor $1, $1, $1	; negamos $1
+nor $3, $3	; negamos $0 (y se guarda solo en $9)
+nor $1, $1, $9	; hacemos el nor final
+
+Demostración de que es correcto:
+
+($1 nor $1) nor ($3 nor $3)
+~(($1 nor $1) or ($3 nor $3))
+~(~($1 or $1) or ~($3 or $3))
+~(~($1) or ~($3))
+~(~$1 or ~$3)
+~~$1 and ~~$3
+$1 and $3
+-------------------------------
+
+
+- SHR -------------------------
+; tenemos nuestro número en $1
+w 1
+cpy $2
+w 0x7F
+cpy $3
+rot $1, $1, -$2	; rotamos 1 a la derecha
+nor $1, $1, $1	; negamos $1
+nor $3, $3	; negamos $0 (y se guarda solo en $9)
+nor $1, $1, $9	; hacemos el nor final
+
+; alternativamente...
+
+; tenemos nuestro número en $1
+w -1
+cpy $2
+w 0x7F
+cpy $3
+rot $1, $1, $2	; rotamos 1 a la derecha ($2 guarda un -1)
+nor $1, $1, $1	; negamos $1
+nor $3, $3	; negamos $0 (y se guarda solo en $9)
+nor $1, $1, $9	; hacemos el nor final
+-------------------------------
