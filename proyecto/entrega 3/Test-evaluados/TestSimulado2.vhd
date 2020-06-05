@@ -16,7 +16,7 @@ architecture bench of Basys3_tb is
           disA            : out std_logic_vector(3 downto 0);
           disB            :  out std_logic_vector(3 downto 0);
           disC            : out std_logic_vector(3 downto 0);
-          disD            : out std_logic_vector(3 downto 0)) 
+          disD            : out std_logic_vector(3 downto 0) 
             );
   end component;
 

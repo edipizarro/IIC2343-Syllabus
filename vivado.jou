@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun  4 18:32:32 2020
+# Process ID: 144351
+# Current directory: /home/felipe/Documents/IIC2343 Arquitectura de Computadores/Syllabus
+# Command line: vivado
+# Log file: /home/felipe/Documents/IIC2343 Arquitectura de Computadores/Syllabus/vivado.log
+# Journal file: /home/felipe/Documents/IIC2343 Arquitectura de Computadores/Syllabus/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/felipe/e2_correccion/grupo_2.xpr
+close_project
+open_project /home/felipe/Desktop/Entrega/project_20.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Basys3_tb.tcl
+relaunch_sim
+restart
+run all
+restart
+run 20ns
+run all
+restart
+run 25ns
+restart
+run 20ns
+run 20ns
+run 20ns
+restart
+run 600ns
+restart
+run 20ns
+run 600ns
+close_sim
+close_project
+open_project /home/felipe/e2_correccion/proyecto-entrega-grupo-34-master/Entrega3/Proyecto/Entrega3_Enproceso.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_project_as project_1 /home/felipe/e2_correccion -force
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_project
+open_project /home/felipe/Desktop/Entrega/project_20.xpr
+update_compile_order -fileset sources_1
