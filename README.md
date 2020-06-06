@@ -80,6 +80,8 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [08-05 | Ayudantía Tarea 2 Mañana](https://zoom.us/rec/share/ppB_M4jsrXFJfs_17nyOBJYKAab7X6a80HBM_PoPyE1ttDDOSJ1FmSc-yEJQRFv4?startTime=1588951922000)
 
+[03-06 | Ayudantía I<sub>3</sub>](https://drive.google.com/file/d/1FhlSLIA7-sGDQa2wIiKcVArkqoU3dnWN/view?usp=sharing) 
+
 ### Interrogaciones
 
 [04-05 | Interrogación 2](https://drive.google.com/file/d/157GLwMpNWJhOOLDwHK_GpvOUnvyLsQZy/view?usp=sharing)

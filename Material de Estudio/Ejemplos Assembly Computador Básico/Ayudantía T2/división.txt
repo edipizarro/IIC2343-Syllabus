@@ -25,9 +25,6 @@ div:                                                    // división sin signo
         MOV A,(cociente)
         MOV B,(resto)
     RET
-        
-
-
 main:
     MOV A,10
     MOV B,3
