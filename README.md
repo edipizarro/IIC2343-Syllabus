@@ -86,6 +86,8 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [04-05 | Interrogación 2](https://drive.google.com/file/d/157GLwMpNWJhOOLDwHK_GpvOUnvyLsQZy/view?usp=sharing)
 
+[08-06 | Interrogación 3](https://drive.google.com/open?id=1smbcyQ8lgKD1PBMTJzsCJ6hSDq_izbFu)
+
 ## Evaluaciones
 
 ### Docencia
