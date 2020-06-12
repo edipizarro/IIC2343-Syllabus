@@ -115,8 +115,7 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 |Entrega 1|27 marzo - 15 abril|
 |Entrega 2|24 abril - 8 mayo|
 |Entrega 3|24 abril - 5 junio|
-
-<!-- |Entrega 4|| -->
+|Entrega 4|19 junio - 3 julio|
 
 ## Contacto
 
