@@ -1,0 +1,42 @@
+DATA:
+    a   150
+    b   150
+    res 9
+
+//!begin-data
+//!end-data
+// el overflow en la comparación me indica
+// cuando el resultado de las demás señales
+// está mal.
+
+CODE:
+    JMP main
+    compare:
+//!begin-code
+        CMP A,B
+        JOV was_v
+        not_v:                  // no hubo overflow
+            CMP A,B
+            JGT es_mayor
+            CMP A,B
+            JLT es_menor
+            MOV A,0
+            JMP end
+        was_v:                  // nos dice que en realidad es al revés de como parece
+            CMP A,B
+            JLT es_mayor
+        es_menor:
+            MOV A,-1
+            JMP end
+        es_mayor:
+            MOV A,1
+            JMP end
+        end:
+            MOV (res),A
+
+    //!end-code
+    exit: JMP exit  // término del programa
+    main:
+        MOV A,(a)
+        MOV B,(b)
+        JMP compare

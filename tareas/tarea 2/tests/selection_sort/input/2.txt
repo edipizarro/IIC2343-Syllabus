@@ -1,0 +1,25 @@
+DATA:
+dest 0
+len 8
+dummy 7
+arreglo -3
+2
+-9
+4
+4
+60
+6
+-10
+//!insert-data
+arreglo_ordenado 0
+CODE:
+JMP main
+selection_sort:
+//!insert-code
+end: JMP end
+main:
+MOV B,arreglo_ordenado
+MOV (dest),B
+MOV A,arreglo
+MOV B,len
+JMP selection_sort

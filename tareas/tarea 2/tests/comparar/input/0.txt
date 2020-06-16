@@ -1,0 +1,15 @@
+DATA:
+abc "123"
+res 10
+a 0
+b 0
+//!insert-data
+CODE:
+JMP main
+compare:
+//!insert-code
+exit: JMP exit
+main:
+MOV A,(a)
+MOV B,(b)
+JMP compare

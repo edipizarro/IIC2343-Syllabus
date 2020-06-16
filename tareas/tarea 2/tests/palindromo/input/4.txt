@@ -1,0 +1,25 @@
+DATA:
+ret1 -1
+ret2 -2
+ret3 -3
+len -10
+str1 "girafarig"
+str2 "12321"
+str3 "aaabbaaa"
+//!insert-data
+CODE:
+JMP main
+//!insert-code
+end: JMP end
+main:
+MOV A,str1
+MOV B,ret1
+CALL determinar_palindromo
+MOV A,str2
+MOV B,ret2
+CALL determinar_palindromo
+MOV A,str3
+MOV B,ret3
+CALL determinar_palindromo
+// MOV A,str                        // puntero del string
+// CALL calcular_largo              // llamo a calcular_largo

@@ -1,0 +1,126 @@
+DATA:
+    ret1 -1					    // vale 1 -> palíndromo, vale 0 -> no palíndromo
+    ret2 -2
+    str1 "abcba"
+    str2 "l"
+
+    len 0
+    debug 100
+    
+    //!begin-data				// no cambiar, comentario de control
+
+    ptr1 0
+    ptr2 0
+
+    //!end-data					// no cambiar, comentario de control
+CODE:
+
+JMP main
+//!begin-code
+
+
+calcular_largo:
+// A = &str
+    MOV B,len
+    MOV (B),0
+    MOV B,A					    // manejaré el "índice" en B
+    while_not_0:
+        MOV A,(B)			    // leo caracter que apunta B
+        CMP A,0				    // while mem[B] != 0
+        JNE falta				// si no es cero anda a "falta"
+        termino:				// si mem[B] == 0
+            RET				    // retorna!
+        falta:
+            MOV (ptr1),B        // guarda el puntero
+            MOV B,(len)         // saca el largo
+            INC B				// incrementa el largo
+            MOV (len),B         // guardo el largo en memoria
+            MOV B,(ptr1)        // saca el puntero de nuevo
+            INC B				// avanza en el arreglo
+            JMP while_not_0     // vuelve a la condición
+
+determinar_palindromo:
+    PUSH B					    // guardo el puntero a la dirección de retorno
+    PUSH A                      // guardo el puntero al arreglo
+
+    // necesito saber el largo del arreglo
+    CALL calcular_largo         // el largo está en len
+    MOV A,(len)
+
+
+    // tomo el puntero al inicio del arreglo
+    POP B
+    PUSH B
+
+    ADD A,B                     // le sumo el largo del arreglo
+    SUB A,1
+    MOV (ptr2),A                // mem[*ptr2] guarda el puntero del final del arreglo
+
+    // tomo el puntero al inicio del arreglo (innecesario, ya está)
+    POP B
+    PUSH B
+
+    MOV (ptr1),B                // el puntero del inicio del arreglo
+    while_son_iguales:
+        MOV B,(ptr1)
+        MOV A,(B)               // leo el caracter y lo pongo en A
+        PUSH A                  // almacen temporal para el caracter
+        MOV B,(ptr2)            // leo el puntero
+        MOV A,(B)               // leo el valor del puntero
+        MOV B,A                 // muevo el caracter del final a B
+        POP A                   // recupero el caracter del principio
+        CMP A,B
+        JEQ mover_punteros
+        son_distintos:			// no es palíndromo
+            POP B               // puntero al arreglo
+            POP B				// saco la dirección de retorno
+            MOV (B),0			// escribo un 0 a donde apunta un puntero
+            RET				    // retorno
+        mover_punteros:
+            MOV B,(ptr1)
+            INC B
+            MOV (ptr1),B		// avanzo ptr1
+            MOV B,(ptr2)
+            MOV A,B
+            SUB A,1
+            MOV (ptr2),A		// retrocedo con ptr2
+
+        // voy a chequear las condiciones de término
+        // estas son: ptr1 == ptr2 o ptr1 > ptr2
+        MOV A,(ptr1)
+        MOV B,(ptr2)
+        CMP A,B
+        JEQ	llegaron_al_mismo_valor
+        CMP A,B
+        JGT llegaron_al_mismo_valor
+        JMP while_son_iguales
+    llegaron_al_mismo_valor:
+        POP B
+        POP B
+        MOV (B),1
+        RET
+
+
+
+
+
+    //!end-code
+    end: JMP end
+    main:
+        MOV A,str1              // puntero del string
+        MOV B,ret1              // puntero a la dirección de retorno
+        CALL determinar_palindromo
+        MOV A,(ret1)
+        PUSH A
+        MOV A,str2
+        MOV B,ret2
+        CALL determinar_palindromo
+        MOV A,(ret2)
+        PUSH A
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP

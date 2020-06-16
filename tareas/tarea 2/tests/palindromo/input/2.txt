@@ -1,0 +1,15 @@
+DATA:
+ret -1
+len -10
+str "nosoyunpalindromo"
+//!insert-data
+CODE:
+JMP main
+//!insert-code
+end: JMP end
+main:
+MOV A,str
+MOV B,ret
+CALL determinar_palindromo
+// MOV A,str                        // puntero del string
+// CALL calcular_largo              // llamo a calcular_largo

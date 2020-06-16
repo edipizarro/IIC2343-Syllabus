@@ -1,0 +1,150 @@
+DATA:
+dest 0
+arreglo 1
+2
+3
+4
+5
+6
+7
+largo 7     // 3
+
+//!begin-data
+mi_arreglo 0    // 4
+mi_largo 0      // 5
+min 0           // 6
+i 0             // 7
+numero_movidos 0  // largo de arreglo_ordenado  // 8
+//!end-data
+arreglo_ordenado 0  // 9
+
+
+CODE:
+JMP main
+
+selection_sort:  // A = &arreglo, B = largo
+//!begin-code
+
+    MOV (mi_arreglo),A
+    MOV B,(B)
+    MOV (mi_largo),B
+
+    while_largo_mayor_cero:
+        // valido condición
+            MOV A,(mi_largo)
+            CMP A,0
+            JEQ termine_ordenar
+        // cuerpo del while
+            CALL sub_min    // A = índice de min(arreglo)
+            PUSH A          // guardo el índice
+            CALL read_array  // A = array[A]
+            CALL add_array   // arreglo_ordenado.append(A)
+            POP A
+            CALL remove     // quito el elemento
+            JMP while_largo_mayor_cero
+    termine_ordenar:
+        JMP end
+
+
+read_array:  // A = index
+    PUSH A      // guardo el índice del arreglo
+    MOV A,(mi_arreglo)
+    POP B
+    ADD A,B
+    MOV B,A
+    MOV A,(B)
+RET
+
+
+add_array:  // A = nro
+    PUSH A
+    MOV A,arreglo_ordenado
+    MOV B,(numero_movidos)
+    ADD A,B
+    PUSH A
+    INC B
+    MOV (numero_movidos),B
+    POP B
+    POP A
+    MOV (B),A
+RET
+
+
+sub_min:
+    MOV B,0         // el índice del menor
+    MOV (min),B
+    INC B
+    MOV (i),B       // el índice de partida
+    // MOV B,(i)
+    for_min:
+        // valido la condición
+            MOV A,(mi_largo)
+            CMP A,B
+            JEQ end_for_min
+        // cuerpo del for
+            MOV A,(min)
+            CALL read_array // array[min]
+            PUSH A
+            MOV A,(i)
+            CALL read_array  // array[i]
+            POP B
+            CMP A,B         // array[i] - array[min]
+            JGE no_cambiar_min
+            MOV A,(i)
+            MOV (min),A
+        no_cambiar_min:
+            MOV B,(i)
+            INC B
+            MOV (i),B
+        JMP for_min
+    end_for_min:
+    MOV A,(min)
+RET
+
+
+remove:  // A = index
+    ADD A,1
+    MOV (i),A  // i = index + 1
+    for_remove:
+        // valido la condición
+            MOV B,(mi_largo)
+            CMP A,B     // i - mi_largo
+            JEQ end_for_remove
+        // cuerpo del for
+            MOV B,A
+            SUB A,1
+            PUSH A
+            MOV A,B
+            CALL read_array  // array[i]
+
+            // POP B
+            // ADD B,(mi_arreglo)
+            
+            POP B
+            PUSH A
+            MOV A,(mi_arreglo)
+            ADD A,B
+            MOV B,A
+            POP A
+            
+            MOV (B),A       // array[i - 1] = array[i]
+        // me preparo para volver al inicio del for.
+            MOV A,(i)
+            ADD A,1
+            MOV (i),A
+        JMP for_remove
+    end_for_remove:
+        MOV A,(mi_largo)
+        SUB A,1
+        MOV (mi_largo),A
+RET
+
+//!end-code
+end: JMP end
+main:
+    MOV A,arreglo_ordenado
+    MOV (dest),A
+    MOV A,arreglo
+    MOV B,largo
+    JMP selection_sort
+
