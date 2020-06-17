@@ -36,6 +36,12 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [01-06 |  Microarquitectura & ISA](https://zoom.us/rec/share/_8JZdJX8zEROXoH98mHmGZJ7XZjEX6a81XNLrvEPzEaNAIRFB13mqLAuJtHHM7P7 )
 
+[10-06 | Memoria caché](https://zoom.us/rec/share/xMxOdJvw5n9IQNLLyGeHRb4oRKjeX6a8hiZM-KAEmB7XEE5ZdvBWYSSxCGAA7BKd)
+
+[15-06 | Memoria caché](https://zoom.us/rec/share/7856AJ_hyWRLbqfRq0KPUIQnDNmieaa8gyIeqPtfzkZsmyicJh7-nvx-dO_2Tasg)
+
+[17-06 | Memoria caché & I/O](https://zoom.us/rec/share/18VvMYnrzV1JR5WXzUvyUfARDNjsaaa81yMZr_IIzBkdgE1-XQHxeuTF9DwiVcK5)
+
 
 ### Taller
 
