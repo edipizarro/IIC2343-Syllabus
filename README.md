@@ -4,7 +4,10 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 
 ## Grabaciones
-### Clases
+
+<details>
+<summary>Clases</summary>
+<br>
 
 [25-03 | Lógica Aritmetica y Punto Flotante](https://zoom.us/rec/share/-9J-Dqnyxj9OZaPK7WCFQpwZPr_XT6a8hCNN-vFeyEpAKQQl9981NUU6HhaAAOUj)
 
@@ -42,8 +45,11 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [17-06 | Memoria caché & I/O](https://zoom.us/rec/share/18VvMYnrzV1JR5WXzUvyUfARDNjsaaa81yMZr_IIzBkdgE1-XQHxeuTF9DwiVcK5)
 
+</details>
 
-### Taller
+<details>
+<summary>Taller</summary>
+<br/>
 
 [20-03 | Taller Introductorio Mañana](https://zoom.us/rec/play/ucZ4fuv6_243GIHD4wSDBqUoW43oJ66s1yJMrqAKmU2wUHlXYFqhYucVNrdZsPcY2foozDvumPDaWTNX?startTime=1584709509000&_x_zm_rtaid=p0OfPwvyS8WybevX7l6Bsw.1585289700185.c531e3b4139cc7ddbe1ca545d7dcca4d&_x_zm_rhtaid=398)
 
@@ -81,8 +87,10 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [19-06 | Taller Entrega 4](https://zoom.us/rec/share/9-VrFK2pyWZIebfn8R7iYL9wGL7vT6a81CEcq_oFxU3sjMS8mvQQ-0-7CXyeGtDP)
 
+</details>
 
-### Ayudantías
+<details>
+<summary>Ayudantías</summary>
 
 [01-04 | Ayudantía I<sub>1</sub>](https://drive.google.com/open?id=14m2uL9SbPR3FdovNB06ANvc1L0UOLPgu)
 
@@ -90,11 +98,16 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [03-06 | Ayudantía I<sub>3</sub>](https://drive.google.com/file/d/1FhlSLIA7-sGDQa2wIiKcVArkqoU3dnWN/view?usp=sharing) 
 
-### Interrogaciones
+</details>
+
+<details>
+<summary>Interrogaciones</summary>
 
 [04-05 | Interrogación 2](https://drive.google.com/file/d/157GLwMpNWJhOOLDwHK_GpvOUnvyLsQZy/view?usp=sharing)
 
 [08-06 | Interrogación 3](https://drive.google.com/open?id=1smbcyQ8lgKD1PBMTJzsCJ6hSDq_izbFu)
+
+</details>
 
 ## Evaluaciones
 
@@ -116,6 +129,18 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 |Tarea 2|6 - 20 mayo|0|3|
 |Tarea 3|10 - 24 de junio|3|0|
 
+<details>
+<summary>Cálculo del promedio de tareas</summary>
+<br/>
+
+![img](calculoNotasTareas.png)
+
+</details>
+
+
+
+
+
 ### Proyecto
 
 |Evaluación|Fecha|
@@ -124,6 +149,8 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 |Entrega 2|24 abril - 8 mayo|
 |Entrega 3|24 abril - 5 junio|
 |Entrega 4|19 junio - 3 julio|
+
+
 
 ## Contacto
 
