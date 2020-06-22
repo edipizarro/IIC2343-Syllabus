@@ -48,7 +48,7 @@ def print_cache(dir_, palabras_bloque_0, palabras_bloque_1, palabras_bloque_2, p
     """
     return [
         dir_,
-        [palabras_bloque_0 + palabras_bloque_1 + palabras_bloque_2 + palabras_bloque_3],
+        palabras_bloque_0 + palabras_bloque_1 + palabras_bloque_2 + palabras_bloque_3,
         "H" if is_hit else "M"
         ]
 
