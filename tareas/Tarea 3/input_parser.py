@@ -18,7 +18,7 @@ def parse(to_parse):
     
     for row in to_parse[2:]:
         nclock, pc, instuction, rega, regb = (
-            row[0:4], 
+            row[0:4],
             row[5:9],
             row[12:22].strip(),
             row[24:28],
