@@ -1,0 +1,13 @@
+DATA:
+var3 10 // esta variable es auxiliar
+var4 20 // esta variable es resultado
+CODE:
+
+programa_2:
+
+POP A // Recibe el primer y unico parametro
+
+SHR A
+
+RET
+

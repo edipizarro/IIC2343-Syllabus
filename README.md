@@ -45,6 +45,10 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [17-06 | Memoria caché & I/O](https://zoom.us/rec/share/18VvMYnrzV1JR5WXzUvyUfARDNjsaaa81yMZr_IIzBkdgE1-XQHxeuTF9DwiVcK5)
 
+[22-06 | I/O](https://zoom.us/rec/share/uuUrDrKu6X9Jf5Xk0Uf6ZZ4qBdzCeaa80CQW-_dbyUuUOArTeOLlTQqwgnO49Sty)
+
+[24-06 | I/O](https://zoom.us/rec/share/7JVNFYno8TNLUJXp7hz_ZIUuJILFX6a8hyhP__AEmkbekSkyjlPReUw0XJGYNC2v))
+
 </details>
 
 <details>
@@ -87,11 +91,16 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 
 [19-06 | Taller Entrega 4](https://zoom.us/rec/share/9-VrFK2pyWZIebfn8R7iYL9wGL7vT6a81CEcq_oFxU3sjMS8mvQQ-0-7CXyeGtDP)
 
+[26-06 | Taller Apoyo Entrega 4 Mañana](https://zoom.us/rec/share/3sdvBq_dxF1JRIn9xFPzU-kNHr_reaa82yAW_qcIy0tRCR0E7soIGzMXYYBbGcei?startTime=1593181118000)
+
+[26-06 | Taller Apoyo Entrega 4 Tarde](https://zoom.us/rec/share/3sdvBq_dxF1JRIn9xFPzU-kNHr_reaa82yAW_qcIy0tRCR0E7soIGzMXYYBbGcei?startTime=1593195063000)
+
+[03-07 | Taller Apoyo Entrega 4 Mañana](https://zoom.us/rec/share/tO17KJjXzm5IEo2d7Ub2C4olOojGeaa803Ud86ZbzUZcaOzi8E3CImAs6kto5tJL)
+
 </details>
 
 <details>
 <summary>Ayudantías</summary>
-
 [01-04 | Ayudantía I<sub>1</sub>](https://drive.google.com/open?id=14m2uL9SbPR3FdovNB06ANvc1L0UOLPgu)
 
 [08-05 | Ayudantía Tarea 2 Mañana](https://zoom.us/rec/share/ppB_M4jsrXFJfs_17nyOBJYKAab7X6a80HBM_PoPyE1ttDDOSJ1FmSc-yEJQRFv4?startTime=1588951922000)
@@ -148,7 +157,7 @@ Syllabus oficial Arquitectura de Computadores 2020-1 IIC2343.
 |Entrega 1|27 marzo - 15 abril|
 |Entrega 2|24 abril - 8 mayo|
 |Entrega 3|24 abril - 5 junio|
-|Entrega 4|19 junio - 3 julio|
+|Entrega 4|19 junio - 6 julio|
 
 
 

@@ -67,9 +67,7 @@ end process;
 
   stimulus: process
   begin
-  
     -- Put initialisation code here
-
     wait for 20 ns;
     -- MOV B,1 
     evaluarA <= (disA xor "0000");

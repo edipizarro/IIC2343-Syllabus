@@ -1,0 +1,13 @@
+DATA:
+var1 0
+var2 1
+CODE:
+
+programa_1: // el programa 1 retorna en A el resultado de A + B
+
+POP A // recibo el segundo parametro en A
+POP B // recibo el primer parametro en B
+
+ADD A,B
+
+RET

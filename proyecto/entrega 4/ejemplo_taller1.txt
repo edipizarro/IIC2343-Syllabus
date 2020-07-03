@@ -1,0 +1,16 @@
+DATA:
+var1 10
+var2 5
+CODE:
+
+IN A,0
+OUT A,B
+CALL suma
+OUT A,B
+
+
+suma:
+POP A
+POP B
+ADD A,B
+RET

@@ -1,0 +1,63 @@
+DATA:
+var1 0 // variable prog1
+var2 1 // variable prog2
+var3 10 // esta variable es auxiliar
+var4 20 // esta variable es resultado
+program_to_execute 0
+
+CODE: 
+
+main:
+
+CALL recibir_parametros
+
+MOV A,(program_to_execute)
+
+CMP A,0
+JEQ execute_program_1
+
+CMP A,1
+JEQ execute_program_2
+
+
+execute_program_1:
+CALL programa_1
+OUT A,0
+JMP end
+
+execute_program_2:
+CALL programa_2
+OUT A,0
+JMP end
+
+
+end:
+JMP end
+
+
+programa_1: // el programa 1 retorna en A el resultado de A + B
+
+POP A // recibo el segundo parametro en A
+POP B // recibo el primer parametro en B
+
+ADD A,B
+
+RET
+
+
+programa_2:
+
+POP A // Recibe el primer y unico parametro
+
+SHR A
+
+
+RET
+
+recibir_parametros:
+
+CALL wait_boton
+MOV A,(program_execute)
+// recibe todos los parametros
+
+RET
